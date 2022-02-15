@@ -8,7 +8,8 @@ Given a `employees` and `departments` table, select the top 3 departments with a
 
 employees table
 
-|| Columns || Type ||
+| Columns | Type |
+|---------|------|
 | id | INTEGER |
 | first_name | VARCHAR |
 | last_name | VARCHAR |
@@ -17,13 +18,15 @@ employees table
 
 departments table
 
-|| Columns || Type ||
+| Columns | Type |
+|---------|------|
 | id | INTEGER |
 | name | VARCHAR |
 
 ### Output
 
-|| Columns || Type ||
+| Columns | Type |
+|---------|------|
 | percentage_over_100K | FLOAT |
 | department_name | VARCHAR |
 | number of employees | INTEGER |
