@@ -72,7 +72,7 @@ After looking at the question again, I was like Sia this is too much, so ended u
 
 ```sql
 SELECT u.sex
-, AVG(p.price * t.quantity) AS order_value
+, ROUND(AVG(p.price * t.quantity),2) AS order_value --dont forget to round like I did
 FROM transactions t
 INNER JOIN users u ON u.id = t.user_id
 INNER JOIN products p ON p.id = t.product_id
