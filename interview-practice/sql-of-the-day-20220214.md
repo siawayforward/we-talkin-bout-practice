@@ -32,7 +32,7 @@ The output should include the action performed and it’s rank in ascending orde
 
 ```sql
 SELECT action
-, RANK() OVER(PARTITION BY action ORDER BY action_ct DESC) AS rank
+, RANK() OVER(PARTITION BY action, action_ct ORDER BY action_ct DESC) AS rank
 FROM
 (
     SELECT action
